@@ -1,6 +1,4 @@
-fetch("https://free-quotes-api.herokuapp.com/").then(response => response.json()).then(result => {
-        const quoteText = document.querySelector("#quoteElement");
-        authorName = document.querySelector(".author"),
-        quoteText.innerText = result.quote;
-        authorName.innerText = result.author || "No Author";
+fetch("http://www.boredapi.com/api/activity/").then(response => response.json()).then(result => {
+        const Text = document.querySelector("#text");
+        Text.innerText = result.activity;
     });
